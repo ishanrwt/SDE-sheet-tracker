@@ -303,5 +303,34 @@ export const sheetData = [
                     { id: "27-6", name: "Maximum XOR of two numbers in an array", url: "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/" },
                     { id: "27-7", name: "Maximum XOR With an Element From Array", url: "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/" }
                 ]
+            },
+            {
+                day: 28, title: "Union-Find / Disjoint Set", problems: [
+                    { id: "28-1", name: "Number of Provinces", url: "https://leetcode.com/problems/number-of-provinces/" },
+                    { id: "28-2", name: "Number of Islands II", url: "https://leetcode.com/problems/number-of-islands-ii/" },
+                    { id: "28-3", name: "Accounts Merge", url: "https://leetcode.com/problems/accounts-merge/" },
+                    { id: "28-4", name: "Redundant Connection", url: "https://leetcode.com/problems/redundant-connection/" }
+                ]
+            },
+            {
+                day: 29, title: "Segment Tree / Fenwick Tree (BIT)", problems: [
+                    { id: "29-1", name: "Range Sum Query - Mutable", url: "https://leetcode.com/problems/range-sum-query-mutable/" },
+                    { id: "29-2", name: "Count of Smaller Numbers After Self", url: "https://leetcode.com/problems/count-of-smaller-numbers-after-self/" },
+                    { id: "29-3", name: "Range Minimum Query (Segment Tree)", url: "https://www.geeksforgeeks.org/problems/range-minimum-query/1" }
+                ]
+            },
+            {
+                day: 30, title: "Bit Manipulation", problems: [
+                    { id: "30-1", name: "Single Number II", url: "https://leetcode.com/problems/single-number-ii/" },
+                    { id: "30-2", name: "Subsets via Bitmask", url: "https://leetcode.com/problems/subsets/" },
+                    { id: "30-3", name: "Counting Bits", url: "https://leetcode.com/problems/counting-bits/" },
+                    { id: "30-4", name: "Sum of Two Integers (no + or -)", url: "https://leetcode.com/problems/sum-of-two-integers/" }
+                ]
+            },
+            {
+                day: 31, title: "Monotonic Deque", problems: [
+                    { id: "31-1", name: "Sliding Window Maximum", url: "https://leetcode.com/problems/sliding-window-maximum/" },
+                    { id: "31-2", name: "Shortest Subarray with Sum at Least K", url: "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/" }
+                ]
             }
         ];

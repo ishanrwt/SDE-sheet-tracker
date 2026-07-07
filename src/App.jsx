@@ -2,6 +2,8 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { sheetData } from './data';
 import './index.css';
 
+const SCROLL_KEY = 'sdeScrollY';
+
 function App() {
   const [progress, setProgress] = useState({});
 
@@ -14,6 +16,43 @@ function App() {
         console.error('Failed to parse progress', e);
       }
     }
+  }, []);
+
+  useEffect(() => {
+    const savedScroll = localStorage.getItem(SCROLL_KEY);
+    if (!savedScroll) return;
+
+    const y = Number(savedScroll);
+    if (Number.isNaN(y)) return;
+
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    const restoreScroll = () => window.scrollTo(0, y);
+    requestAnimationFrame(() => requestAnimationFrame(restoreScroll));
+  }, []);
+
+  useEffect(() => {
+    let timeoutId;
+
+    const saveScroll = () => {
+      localStorage.setItem(SCROLL_KEY, String(window.scrollY));
+    };
+
+    const handleScroll = () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(saveScroll, 100);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('beforeunload', saveScroll);
+
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('beforeunload', saveScroll);
+    };
   }, []);
 
   const handleCheck = (id, checked) => {

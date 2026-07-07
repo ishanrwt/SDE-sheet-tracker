@@ -148,8 +148,7 @@ export const sheetData = [
             },
             {
                 day: 14.5, title: "Custom Comparator Sorting", problems: [
-                    { id: "14.5-1", name: "Largest Number", url: "https://leetcode.com/problems/largest-number/" },
-                    { id: "14.5-2", name: "Smallest String With Swaps", url: "https://leetcode.com/problems/smallest-string-with-swaps/" }
+                    { id: "14.5-1", name: "Largest Number", url: "https://leetcode.com/problems/largest-number/" }
                 ]
             },
             {
@@ -309,7 +308,8 @@ export const sheetData = [
                     { id: "28-1", name: "Number of Provinces", url: "https://leetcode.com/problems/number-of-provinces/" },
                     { id: "28-2", name: "Number of Islands II", url: "https://leetcode.com/problems/number-of-islands-ii/" },
                     { id: "28-3", name: "Accounts Merge", url: "https://leetcode.com/problems/accounts-merge/" },
-                    { id: "28-4", name: "Redundant Connection", url: "https://leetcode.com/problems/redundant-connection/" }
+                    { id: "28-4", name: "Redundant Connection", url: "https://leetcode.com/problems/redundant-connection/" },
+                    { id: "28-5", name: "Smallest String With Swaps", url: "https://leetcode.com/problems/smallest-string-with-swaps/" }
                 ]
             },
             {
